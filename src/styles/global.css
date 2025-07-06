@@ -1,0 +1,51 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --link: #1e40af;
+  --header: #f0f0f0;
+}
+
+.dark {
+  --bg: #111827;
+  --text: #f9fafb;
+  --link: #93c5fd;
+  --header: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--header);
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--text);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.page {
+  padding: 2rem;
+}

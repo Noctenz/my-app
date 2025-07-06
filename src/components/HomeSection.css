@@ -1,0 +1,68 @@
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #3a0ca3, #7209b7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-container {
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  color: #dddddd;
+}
+
+.hero-text button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 999px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: #e0e0e0;
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top right, rgba(128, 0, 255, 0.4), rgba(255, 0, 128, 0.4));
+  mix-blend-mode: overlay;
+}
