@@ -1,0 +1,24 @@
+body.light-theme {
+  --color-bg: #f9f9fb;
+  --color-primary: #d42c34;
+  --color-text: #222;
+  background: var(--color-bg);
+}
+body.dark-theme {
+  --color-bg: #19202a;
+  --color-primary: #d42c34;
+  background: var(--color-bg);
+}
+
+.app-root {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 20px;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: 24px;
+}
