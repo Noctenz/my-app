@@ -16,6 +16,32 @@
   gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  .home-main {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+
+  .main-illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .logo-overlay {
+    width: 60%;
+    margin-top: -20px;
+  }
+}
+
 .main-content {
   flex: 1 1 500px;
 }
@@ -113,6 +139,13 @@
 .companies-logos img {
   height: 80px;
   transition: filter 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .companies-logos {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .home-team {
