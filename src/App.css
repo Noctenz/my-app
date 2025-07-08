@@ -1,24 +1,87 @@
+/* ===== THEME ===== */
 body.light-theme {
-  --color-bg: #f9f9fb;
-  --color-primary: #d42c34;
-  --color-text: #222;
   background: var(--color-bg);
-}
-body.dark-theme {
-  --color-bg: #19202a;
-  --color-primary: #d42c34;
-  background: var(--color-bg);
+  color: var(--color-text);
+  scroll-behavior: smooth;
 }
 
+body.dark-theme {
+  background: var(--color-bg);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+/* ===== LAYOUT ===== */
 .app-root {
   display: flex;
 }
 
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
 .main-content {
   flex: 1;
-  margin-left: 20px;
-  min-height: 100vh;
-  background: var(--color-bg);
-  color: var(--color-text);
-  padding: 24px;
+  padding-left: 80px; /* agar tidak tertutup sidebar */
 }
+
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+
+/* ===== SCROLLBAR ===== */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d42c34 transparent;
+}
+

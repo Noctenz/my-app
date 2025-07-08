@@ -1,27 +1,29 @@
 :root {
-  --color-bg: #f9f9fb;
+  --color-bg: #f6f9ff;
   --color-primary: #d42c34;
   --color-text: #222;
-  --sidebar-bg: #e6ecfa;
+  --sidebar-bg: #ffffff;
   --sidebar-border: rgba(34, 48, 77, 0.08);
   --sidebar-logo: #f7b731;
   --sidebar-logo-hover: #fff5b0;
   --sidebar-icon: #5a6b8c;
   --sidebar-icon-active: #d42c34;
   --sidebar-hover: #d42c343a;
+  --footer-bg: #1c1c1c;
 }
 
 body.dark-theme {
-  --color-bg: #19202a;
+  --color-bg: #1c1c1c;
   --color-primary: #d42c34;
   --color-text: #fff;
-  --sidebar-bg: #1b2439;
+  --sidebar-bg: #272727;
   --sidebar-border: rgba(255,255,255,0.04);
   --sidebar-logo: #ffe066;
   --sidebar-logo-hover: #fff5b0;
   --sidebar-icon: #b7c7e0;
   --sidebar-icon-active: #d42c34;
   --sidebar-hover: #d42c343a;
+  --footer-bg: #1c1c1c;
 }
 
 body {
