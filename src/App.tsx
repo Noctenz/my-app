@@ -5,6 +5,8 @@ import Gallery from "./pages/Gallery";
 import ApplicationStaff from "./components/ApplicationStaff";
 import SidebarNavbar from './components/SidebarNavbar';
 import HomeSection from './components/HomeSection';
+import GallerySection from './components/GallerySection';
+import GalleryDetail from './components/GalleryDetail'; // ✅ NEW
 import Footer from './components/Footer';
 import './App.css';
 
@@ -61,17 +63,25 @@ const App = () => {
         <button id="backToTop" className="back-to-top">↑</button>
         <main className="main-content">
           <Routes>
-            <Route
-              path="/"
-              element={
-                <div className="home-wrapper">
-                  <HomeSection />
-                  <Home />
-                  <Footer />
-                </div>
-              }
-            />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/" element={
+              <div className="home-wrapper">
+                <HomeSection />
+                <Home />
+                <Footer />
+              </div>
+            } />
+            <Route path="/gallery" element={
+              <div className="home-wrapper">
+                <GallerySection />
+                <Footer />
+              </div>
+            } />
+            <Route path="/gallery/:slug" element={
+              <div className="home-wrapper">
+                <GalleryDetail />
+                <Footer />
+              </div>
+            } />
             <Route path="/apply" element={<ApplicationStaff />} />
           </Routes>
         </main>

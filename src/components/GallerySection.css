@@ -1,0 +1,93 @@
+.gallery-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.gallery-header .highlight {
+  color: var(--color-text);
+}
+
+.gallery-header p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #818181;
+}
+
+.gallery-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.gallery-tabs button {
+  padding: 8px 16px;
+  background: #e3eaf2;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.gallery-tabs .active {
+  background: #d42c34;
+  color: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.gallery-card {
+  background: var(--sidebar-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  max-width: 360px;
+  text-align: left;
+}
+.gallery-card img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-meta {
+  padding: 16px;
+}
+.gallery-meta h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+.gallery-meta .badge {
+  background: #d42c34;
+  color: white;
+  padding: 2px 8px;
+  font-size: 1rem;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.gallery-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.creator-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.creator-row h4 {
+  font-size: 0.875rem;
+  color: #818181;
+  font-weight: 500;
+  margin: 0;
+}

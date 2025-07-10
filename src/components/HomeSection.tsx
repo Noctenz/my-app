@@ -74,7 +74,6 @@ const HomeSection = () => (
       </div>
     </section>
 
-    {/* ✅ About Section */}
     <section className="home-about">
       <h2>About Sovereign Studio</h2>
       <div className="underline" />

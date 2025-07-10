@@ -39,14 +39,6 @@ const SidebarNavbar: React.FC<Props> = ({ theme, setTheme }) => {
           <i className="fa fa-fw fa-image"></i>
           <span className="sidebar-label">Galery</span>
         </Link>
-        <Link
-          to="/apply"
-          className={`sidebar-icon ${location.pathname === "/ApplicationStaff" ? "active" : ""}`}
-          title="ApplicationStaff"
-        >
-          <i className="fa fa-fw fa-image"></i>
-          <span className="sidebar-label">Galery</span>
-        </Link>
       </nav>
 
       <div className="sidebar-footer">

@@ -6,7 +6,7 @@
   --sidebar-border: rgba(34, 48, 77, 0.08);
   --sidebar-logo: #f7b731;
   --sidebar-logo-hover: #fff5b0;
-  --sidebar-icon: #5a6b8c;
+  --sidebar-icon: #d42c34;
   --sidebar-icon-active: #d42c34;
   --sidebar-hover: #d42c343a;
   --footer-bg: #1c1c1c;
@@ -20,7 +20,7 @@ body.dark-theme {
   --sidebar-border: rgba(255,255,255,0.04);
   --sidebar-logo: #ffe066;
   --sidebar-logo-hover: #fff5b0;
-  --sidebar-icon: #b7c7e0;
+  --sidebar-icon: #d42c34;
   --sidebar-icon-active: #d42c34;
   --sidebar-hover: #d42c343a;
   --footer-bg: #1c1c1c;
