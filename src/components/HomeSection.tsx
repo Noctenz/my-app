@@ -60,6 +60,9 @@ const HomeSection = () => (
       <section className="main-illustration">
         <div className="img-blur-bg" />
         <img src="/homeimg.svg" alt="Teamwork Illustration" className="main-img" />
+        <div className="img-discord">
+        <img src="/dcbubble.svg" alt="Teamwork Illustration" className="main-img" onClick={() => window.open("https://discord.gg/namalink", "_blank")} style={{ cursor: "pointer" }}  />
+        </div>
       </section>
     </main>
 

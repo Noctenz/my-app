@@ -28,7 +28,7 @@
   padding: 8px 16px;
   background: #e3eaf2;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
   cursor: pointer;
 }
 .gallery-tabs .active {
@@ -67,7 +67,7 @@
   background: #d42c34;
   color: white;
   padding: 2px 8px;
-  font-size: 1rem;
+  font-size: 12px;
   border-radius: 10px;
   display: inline-block;
   margin-bottom: 4px;

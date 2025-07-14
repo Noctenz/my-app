@@ -43,8 +43,8 @@
 }
 
 .gallery-detail-images {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   justify-content: center;
 }
@@ -54,7 +54,12 @@
   width: auto;
   height: auto;
   max-height: 160px;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/fonts/Minecraft.ttf') format('truetype');
 }
 
 .thumbnail {
@@ -67,6 +72,43 @@
   transform: scale(1.05);
 }
 
+.thumbnail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: fit-content;
+  max-width: 160px;
+}
+
+.thumbnail-image {
+  max-width: 120px;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.thumbnail-text {
+  text-align: center;
+  white-space: pre-line;
+  width: 120px;
+  padding: 6px 4px;
+  margin-top: 4px;
+  font-family: 'Minecraft', sans-serif;
+}
+
+.thumbnail-main-title {
+  font-size: 7px;
+  color: gray;
+}
+
+.thumbnail-sub-title {
+  font-size: 8px;
+  font-weight: bold;
+  color: var(--color-text);
+}
 /* Modal styles */
 .modal {
   position: fixed;
@@ -110,7 +152,7 @@
   background-color: #d42c34;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -135,7 +177,7 @@
   padding: 0.5rem 1rem;
   background-color: #e5e7eb;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s ease;
@@ -151,8 +193,8 @@
 }
 
 .gallery-detail-section {
-  max-width: 95%;
-  width: 95%;
+  max-width: 50%;
+  width: 50%;
 }
 
 .youtube-video-wrapper {
@@ -179,4 +221,22 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.gallery-detail-section .category-title-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.gallery-detail-section .category-title-wrapper h2 {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  font-size: 25px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-detail-section .category-title-wrapper svg {
+  margin-right: 8px;
 }
